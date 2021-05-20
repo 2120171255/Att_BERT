@@ -1,4 +1,4 @@
-# Multiway_Attention
+# Multiway Attention Framework(MA)
 
 
 ### BERT+MA and ALBERT+MA: multiway attention networks for sentence representation.
