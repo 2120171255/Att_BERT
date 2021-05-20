@@ -21,7 +21,7 @@ python -m albert.run_classifier \
   --optimizer=adamw \
   --task_name=MNLI \
   --warmup_step=1000 \
-  --learning_rate=3e-5 \
+  --learning_rate=2e-5 \
   --train_step=10000 \
   --save_checkpoints_steps=100 \
   --train_batch_size=128
@@ -52,8 +52,8 @@ python -m albert.run_squad_v1 \
   --do_predict=true \
   --train_batch_size=48 \
   --predict_batch_size=8 \
-  --learning_rate=5e-5 \
-  --num_train_epochs=2.0 \
+  --learning_rate=2e-5 \
+  --num_train_epochs=3.0 \
   --warmup_proportion=.1 \
   --save_checkpoints_steps=5000 \
   --n_best_size=20 \
@@ -84,8 +84,8 @@ python -m albert.run_squad_v2 \
   --do_predict \
   --train_batch_size=48 \
   --predict_batch_size=8 \
-  --learning_rate=5e-5 \
-  --num_train_epochs=2.0 \
+  --learning_rate=2e-5 \
+  --num_train_epochs=3.0 \
   --warmup_proportion=.1 \
   --save_checkpoints_steps=5000 \
   --n_best_size=20 \
@@ -115,9 +115,9 @@ python -m albert.run_race \
   --max_qa_length=128 \
   --do_train \
   --do_eval \
-  --train_batch_size=32 \
+  --train_batch_size=16 \
   --eval_batch_size=8 \
-  --learning_rate=1e-5 \
+  --learning_rate=2e-5 \
   --train_step=12000 \
   --warmup_step=1000 \
   --save_checkpoints_steps=100
